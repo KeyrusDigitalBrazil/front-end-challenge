@@ -3,8 +3,9 @@
 Technologies to be used:
 
 * Type Script.
+* JavaScript (ES6).
 * Angular js higher to version 4.
-* Html5 with CSS3.
+* HTML5 with CSS3.
 * Write your javaScript tests with Jasmine.
 * npm or yarn.
 
