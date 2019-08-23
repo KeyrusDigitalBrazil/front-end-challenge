@@ -42,10 +42,10 @@ Given the following scenarios, you will consume 2 enpoints.
   
   
   
-    To run the application:
+ # To run the application:
   
-   mvn install && mvn spring-boot: run
+*   mvn install && mvn spring-boot: run
    
-   To access the Apis documentation:
+ #  To access the Apis documentation:
    
-   http: // localhost: 8080 / swagger-ui.html #! /
+   * http://localhost:8080/swagger-ui.html#!/
