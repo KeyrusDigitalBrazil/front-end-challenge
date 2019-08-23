@@ -2,11 +2,11 @@
 
 Technologies to be used:
 
-1-) Type Script
-2-) Angular js higher to version 4
-3-) Html5 with CSS3
-4-) Write your javaScript tests with Jasmine.
-5-) npm or yarn
+* Type Script.
+* Angular js higher to version 4.
+* Html5 with CSS3
+* Write your javaScript tests with Jasmine.
+* npm or yarn
 
 
 Create the following pages with layouts of your choice.
@@ -34,7 +34,7 @@ Given the following scenarios, you will consume 2 enpoints.
 
 2-) Consult all products
 
-* Set up a Home page where you have a caroussel with addtoCart option
+  * Set up a Home page where you have a caroussel with addtoCart option
 
   - The home page should have a banner with the lowest price product.
   - The home page should contain a caroussel with all products.
