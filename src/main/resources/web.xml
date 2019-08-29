@@ -1,0 +1,16 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
+
+<filter>
+    <filter-name>AWSXRayServletFilter</filter-name>
+    <filter-class>com.amazonaws.xray.javax.servlet.AWSXRayServletFilter</filter-class>
+    <init-param>
+        <param-name>fixedName</param-name>
+        <param-value>1</param-value>
+    </init-param>
+</filter>
+<filter-mapping>
+<filter-name>AWSXRayServletFilter</filter-name>
+<url-pattern>*</url-pattern>
+</filter-mapping>
+
+</web-app>
