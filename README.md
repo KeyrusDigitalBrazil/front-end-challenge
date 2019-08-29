@@ -49,4 +49,4 @@ Given the following scenarios, you will consume 2 enpoints.
    
  #  To access the Apis documentation:
    
-   * http://localhost:8080/swagger-ui.html#!/
+ http://challenge-front-end.us-east-2.elasticbeanstalk.com/swagger-ui.html

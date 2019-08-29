@@ -96,21 +96,30 @@
 			<version>2.6.1</version>
 		</dependency>
 
-
+		<dependency>
+			<groupId>com.googlecode.json-simple</groupId>
+			<artifactId>json-simple</artifactId>
+			<version>1.1</version>
+			<scope>provided</scope>
+		</dependency>
 
 	</dependencies>
 
 	<build>
+		<finalName>keyrus-app</finalName>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<includes>
+					<include>**/*.json</include>
+					<include>**/*.properties</include>
+					<include>**/*.*</include>
+
+				</includes>
+
+			</resource>
+		</resources>
 		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<excludes>
-						<exclude>**/cloud/config/*.java</exclude>
-					</excludes>
-				</configuration>
-			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>

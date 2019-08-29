@@ -4,13 +4,11 @@ import br.com.keyrus.test.dto.ProductsDTO;
 import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
 
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.Reader;
+import java.io.*;
 
 @Slf4j
 public class KeyrusUtils {
+
 
     public static ProductsDTO create()
     {
@@ -18,11 +16,14 @@ public class KeyrusUtils {
 
         try
         {
-            Reader reader = new FileReader(new File(ClassLoader.getSystemResource("productPage.json").getFile()));
+
+            InputStream inputStream = KeyrusUtils.class.getClassLoader().getResourceAsStream("productPage.json");
+            Reader reader = new InputStreamReader(inputStream);
+
             Gson gson  = new Gson();
             productDTO = gson.fromJson(reader,ProductsDTO.class);
 
-        }catch(IOException cause)
+        }catch(Exception cause)
         {
             log.warn("not found file ", cause);
         }
